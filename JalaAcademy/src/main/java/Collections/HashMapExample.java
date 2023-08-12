@@ -3,14 +3,8 @@ package Collections;
 import java.util.HashMap;
 
 public class HashMapExample {
-    public static void main(String[] args) {
-        HashMap<Integer,String> hashMap = new HashMap<>();
-        hashMap.put(1,"Srikanth");
-        hashMap.put(2,"Amit");
-        hashMap.put(3,"Abdul");
-        hashMap.put(4,"Rohit");
-        hashMap.put(5,"Vishal");
-        hashMap.put(6,"Malli");
+
+    public static void getHashMapValues(HashMap<Integer,String> hashMap){
         System.out.println("Output: "+hashMap);
         System.out.println("Name of the student with id no 6:");
         System.out.println(hashMap.get(6));
@@ -32,5 +26,18 @@ public class HashMapExample {
         System.out.println("Put all values in separate: ");
         HashMap<Integer, String> ss = new HashMap<>(hashMap);
         System.out.println(ss);
+    }
+
+    public static void main(String[] args) {
+        HashMap<Integer,String> hashMap = new HashMap<>();
+        hashMap.put(1,"Srikanth");
+        hashMap.put(2,"Amit");
+        hashMap.put(3,"Abdul");
+        hashMap.put(4,"Rohit");
+        hashMap.put(5,"Vishal");
+        hashMap.put(6,"Malli");
+        HashMapExample.getHashMapValues(hashMap);
+        System.out.println("*******");
+
     }
 }
